@@ -1,4 +1,4 @@
--- Ödev 6
+-- Ödev 7
 
 -- 1- film tablosunda bulunan filmleri rating değerlerine göre gruplayınız.
 SELECT rating FROM film
