@@ -63,35 +63,45 @@ insert into employee (id, name, birthday, email) values (50, 'Rene', '10/05/1969
 -- 3- Sütunların her birine göre diğer sütunları güncelleyecek 5 adet UPDATE işlemi yapalım.
 UPDATE employee
 SET name = 'Eda', birthday = '1990-05-27'
-WHERE name ='Ronni';
+WHERE name ='Ronni'
+RETURNING *;
 
 UPDATE employee
 SET name= 'Alexander' 
-WHERE name = 'Christoper';
+WHERE name = 'Christoper'
+RETURNING *;
 
 UPDATE employee
 SET mail= 'mbarlacev@gmail.com' 
-WHERE name = 'Marcia';
+WHERE name = 'Marcia'
+RETURNING *;
 
 UPDATE employee
 SET birthday= '14/09/1985' 
-WHERE birthday = '14/09/1965';
+WHERE birthday = '14/09/1965'
+RETURNING *;
 
 UPDATE employee
 SET name= 'Alexander' 
-WHERE id = '49';
+WHERE id = '49'
+RETURNING *;
 -- 4- Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
 DELETE FROM employee
-WHERE name = 'Camila';
+WHERE name = 'Camila'
+RETURNING *;
 
 DELETE FROM employee
-WHERE id = 47;
+WHERE id = 47
+RETURNING *;
 
 DELETE FROM employee
-WHERE mail = 'grobardx@time.com';
+WHERE mail = 'grobardx@time.com'
+RETURNING *;
 
 DELETE FROM employee
-WHERE birthday = '19/08/1992';
+WHERE birthday = '19/08/1992'
+RETURNING *;
 
 DELETE FROM employee
-WHERE name = 'Gilburt';
+WHERE name = 'Gilburt'
+RETURNING *;
