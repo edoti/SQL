@@ -85,6 +85,8 @@ UPDATE employee
 SET name= 'Alexander' 
 WHERE id = '49'
 RETURNING *;
+
+
 -- 4- Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
 DELETE FROM employee
 WHERE name = 'Camila'
