@@ -72,7 +72,7 @@ WHERE name = 'Christoper'
 RETURNING *;
 
 UPDATE employee
-SET mail= 'mbarlacev@gmail.com' 
+SET email= 'mbarlacev@gmail.com' 
 WHERE name = 'Marcia'
 RETURNING *;
 
@@ -97,7 +97,7 @@ WHERE id = 47
 RETURNING *;
 
 DELETE FROM employee
-WHERE mail = 'grobardx@time.com'
+WHERE email = 'grobardx@time.com'
 RETURNING *;
 
 DELETE FROM employee
