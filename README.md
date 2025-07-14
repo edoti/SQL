@@ -1,7 +1,7 @@
 # SQL 
 
 SQL kursuna ait ödevleri içermektedir.
-Veri seti: dvdrental
+Veri seti: **dvdrental**
 
 ---
 Ödev 1'e ait sorular:  
